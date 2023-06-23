@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import { TonicProvider } from "@tonic-ui/react";
 
 import Menu from "./Menu";
