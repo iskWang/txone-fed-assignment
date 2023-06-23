@@ -42,11 +42,6 @@ const DropContainer = (props) => {
     () => ({
       type: "Menu",
       item: { ...position },
-      collect: (monitor) => {
-        return {
-          isDragging: monitor.isDragging(),
-        };
-      },
     }),
     [position]
   );
