@@ -1,14 +1,10 @@
 import React from "react";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
-import {
-  TonicProvider,
-  PortalManager,
-  ToastManager,
-  Flex,
-  Text,
-} from "@tonic-ui/react";
+import { TonicProvider, PortalManager, ToastManager } from "@tonic-ui/react";
 
-import { Menu } from "./Components";
+import { Menu, DndContainer } from "./Components";
 
 const App = () => {
   return (
@@ -20,15 +16,11 @@ const App = () => {
     >
       <PortalManager>
         <ToastManager>
-          <Flex
-            direction="column"
-            align="center"
-            justify="center"
-            minHeight="100vh"
-          >
-            <Text my={5}>Hello world!</Text>
-            <Menu />
-          </Flex>
+          <DndProvider backend={HTML5Backend}>
+            <DndContainer>
+              <Menu />
+            </DndContainer>
+          </DndProvider>
         </ToastManager>
       </PortalManager>
     </TonicProvider>

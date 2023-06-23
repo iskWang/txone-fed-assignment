@@ -23,6 +23,7 @@
 
 - [Creating a React app with Webpack](https://jsramblings.com/creating-a-react-app-with-webpack/)
 - [Playright: Migrating from Testing Library](https://playwright.dev/docs/testing-library)
+- [react-dnd example](https://react-dnd.github.io/react-dnd/examples/drag-around/naive)
 
 ## Issue
 

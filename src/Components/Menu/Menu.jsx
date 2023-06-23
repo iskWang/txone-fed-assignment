@@ -34,7 +34,6 @@ const Menu = (props) => {
   const [colorStyle] = useColorStyle({ colorMode });
 
   const wrapStyle = {
-    width: 200,
     padding: 4,
     background: colorStyle.background.primary,
   };
