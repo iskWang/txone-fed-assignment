@@ -1,4 +1,3 @@
-// 載入 dotenv
 require("dotenv").config();
 
 import { defineConfig } from "@playwright/test";
