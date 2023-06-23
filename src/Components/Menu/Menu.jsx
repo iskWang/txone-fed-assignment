@@ -42,7 +42,7 @@ const Menu = (props) => {
   return (
     <Box {...wrapStyle}>
       <BaseMenu>
-        <MenuToggle>
+        <MenuToggle data-testid="toggle-button">
           <Avatar
             backgroundColor={colorStyle.background.secondary}
             color={colorStyle.color.secondary}

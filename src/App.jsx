@@ -5,6 +5,7 @@ import {
   PortalManager,
   ToastManager,
   Flex,
+  Text,
 } from "@tonic-ui/react";
 
 import { Menu } from "./Components";
@@ -19,7 +20,13 @@ const App = () => {
     >
       <PortalManager>
         <ToastManager>
-          <Flex align="center" justify="center" minHeight="100vh">
+          <Flex
+            direction="column"
+            align="center"
+            justify="center"
+            minHeight="100vh"
+          >
+            <Text my={5}>Hello world!</Text>
             <Menu />
           </Flex>
         </ToastManager>
