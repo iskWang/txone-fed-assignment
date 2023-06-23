@@ -1,3 +1,6 @@
 /node_modules
 /build
 yarn-error.log
+/test-results/
+/playwright-report/
+/playwright/.cache/
